@@ -2,9 +2,11 @@
 
 - Personagens 
     - Quais os personagens que farão parte do jogo?
-        - Ex: Protagonistas, Antagonistas, Personagens não jogaveis (NPCs) ...
+        - Teremos um jogo Single-Player, onde o jogador controla o protagonista e ao desenvolver da história encontra 5 personagens coadjuvantes e um grupo de NPCs antagonistas 
     - Qual o plano de fundo do(s) seu(s) personagem(s)?
+        - O personagem segue uma estética cyberpunk, usando bastante dos conceitos urbanos, neon e futurista.
     - Quais as características mais importantes para serem adicionadas no(s) personagem(s)?
+        - Os poderes adquiridos durante a gameplay são a maior característica estética, trazendo diferença para a mecânica e visual do jogo.
 
 - História
 
