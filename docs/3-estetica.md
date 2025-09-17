@@ -12,12 +12,17 @@
 
     - Premissa
         - Qual o plano de fundo do seu jogo? Onde se passa?
+           - O jogo se passa em uma casa ao redor de uma cidade abandonada. Os ambientes que o jogador irá observar durante o jogo são os cômodos e o jardim no funda da casa.
         - O que deve ser contado antes do jogador assumir o controle?
+          - O jogador vive em um futuro distópico, aonde poderes existem e a tecnologia aparace como contra-ataque a eles. Os personagens com poderes estão a margem da sociedade e em uma eterna luta por sobrevivência.     
 
     - Como o Jogo começa?
+       - 5 amigos do nosso protagonista são sequestrados, levando nosso herói em uma busca para resgatá-los.
     - Como o jogo evolui?
-        - Novas abilidades X Novos desafios
-    - Como o jogo termina? 
+        - Novas habilidades X Novos desafios
+        - Durante o jogo, são propostos desafios lógicos e enigmas em cada cômodo, a solução deles leva ao resgate de 1 dos amigos e ao desenvolvimento de um novo poder para o personagem.
+    - Como o jogo termina?
+        - Ao con
         - Quais os possíveis finais da sua história?
 
 - Sentidos
