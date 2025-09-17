@@ -22,10 +22,15 @@
         - Novas habilidades X Novos desafios
         - Durante o jogo, são propostos desafios lógicos e enigmas em cada cômodo, a solução deles leva ao resgate de 1 dos amigos e ao desenvolvimento de um novo poder para o personagem.
     - Como o jogo termina?
-        - Ao con
+        - Ao conseguir chegar ao jardim da casa, o jogador se depara com o grupo antagonista que sequestrou seus amigos, tendo que lutar contra eles e tomar a decisão de se tornar o herói da história, que foi até seu limite para salvar aqueles com que se importa ou se irá se tornar o vilão que foi corrompido pela quantidade de poder que acumulou e quer seguir seu caminho sozinho.
         - Quais os possíveis finais da sua história?
+            - Escolhendo ser o herói, ao derrotar o grupo inimigo, ele e seus amigos seguem juntos no retorno para casa e planejam como ajudar outras pessoas com poderes que também sofrem como eles.
+            - Escolhendo ser o vilão, depois de derrotar o grupo inimigo, o personagem mata seus amigos para manter seus poderes permanentemente e segue seu caminho com um plano de matar todos que tem poderes e conquistar todos que não tem. 
 
 - Sentidos
     - Quais os sentidos dos jogadores você gostaria de explorar no seu jogo?
+        - Apesar de não ser um jogo com gráficos avançados, o visual cyberpunk com suas cores e peculiaridades, junto a mecânica dos poderes explora a visão do jogador. A trilha sonora que seguirá a narrativa também sera um ponto focal do jogo, enriquecendo a experiência do jogador.
     - O jogo vai ter elementos visuais, sonoros, táteis, degustativos, olfativos?
+        - Terá elementos visuais e sonoros, sendo um jogo 2D para PC estes são os sentidos que realisticamente conseguiríamos apresentar. 
         - Como esses elementos são apresentados para o jogador?
+            - A música estará presente ao fundo da gameplay inteira, seguindo as emoções trazidas pela narrativa e aumentando o interesse do jogador pelo jogo. Já com a identidade visual, tudo visto em tela seguirá uma estética relacionada a narrativa e aos desafios apresentados, como no visual do personagem, os ambientes, os objetos e o plano de fundo. A mecânica que vai se desenvolver durante o jogo está ligada a teclas que serão responsáveis por cada habilidade nova adquirida e o visual que trazemos quando elas estão em uso.     
