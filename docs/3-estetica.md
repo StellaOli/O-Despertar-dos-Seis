@@ -4,8 +4,8 @@
     - Quais os personagens que farão parte do jogo?
         - Teremos um jogo Single-Player, onde o jogador controla o protagonista e ao desenvolver da história encontra 5 personagens coadjuvantes e um grupo de NPCs antagonistas 
     - Qual o plano de fundo do(s) seu(s) personagem(s)?
-        - Nosso personagem nasceu em 2367, em um mundo onde alterações genéticas criaram uma nova vertente de humanos, chamados de hereditários. Os hereditários são divididos do resto do mundo ao nascerem, sua genética permite que os médicos os identifiquem mesmo sem a manifestação dos poderes. Nesse cenário futurista
-        - personagem segue uma estética cyberpunk, usando bastante dos conceitos urbanos, neon e futurista.
+        - Nosso personagem nasceu em 2367, em um mundo onde alterações genéticas criaram uma nova vertente de humanos, chamados de hereditários. Os hereditários são divididos do resto do mundo ao nascerem, sua genética permite que os médicos os identifiquem mesmo sem a manifestação dos poderes. Nesse cenário futurista, o país se dividiu em duas terras separadas por um oceano, Urbem se tornou o país daqueles com poderes. E é lá que nossa história começa.
+        - O jogo segue uma estética cyberpunk, usando bastante dos conceitos urbanos, neon e futurista.
     - Quais as características mais importantes para serem adicionadas no(s) personagem(s)?
         - Os poderes adquiridos durante a gameplay são a maior característica estética, trazendo diferença para a mecânica e visual do jogo.
 
