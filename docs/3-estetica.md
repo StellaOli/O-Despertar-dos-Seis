@@ -2,10 +2,14 @@
 
 - Personagens 
     - Quais os personagens que farão parte do jogo?
-        - Teremos um jogo Single-Player, onde o jogador controla o protagonista e ao desenvolver da história encontra 5 personagens coadjuvantes e um grupo de NPCs antagonistas 
+        - Teremos um jogo Single-Player, onde o jogador controla o protagonista e ao desenvolver da história encontra 5 personagens coadjuvantes e um grupo de NPCs antagonistas
+          
     - Qual o plano de fundo do(s) seu(s) personagem(s)?
-        - Nosso personagem nasceu em 2367, em um mundo onde alterações genéticas criaram uma nova vertente de humanos, chamados de hereditários. Os hereditários são divididos do resto do mundo ao nascerem, sua genética permite que os médicos os identifiquem mesmo sem a manifestação dos poderes. Nesse cenário futurista, o país se dividiu em duas terras separadas por um oceano, Urbem se tornou o país daqueles com poderes. E é lá que nossa história começa.
+        - Nosso personagem nasceu em 2367, em um mundo onde alterações genéticas criaram uma nova vertente de humanos, chamados de hereditários.
+        - Os hereditários são divididos do resto do mundo ao nascerem, sua genética permite que os médicos os identifiquem mesmo sem a manifestação dos poderes.
+        - Nesse cenário futurista, o país se dividiu em duas terras separadas por um oceano, Urbem se tornou o país daqueles com poderes. E é lá que nossa história começa.
         - O jogo segue uma estética cyberpunk, usando bastante dos conceitos urbanos, neon e futurista.
+          
     - Quais as características mais importantes para serem adicionadas no(s) personagem(s)?
         - Os poderes adquiridos durante a gameplay são a maior característica estética, trazendo diferença para a mecânica e visual do jogo.
 
@@ -13,7 +17,10 @@
 
     - Premissa
         - Qual o plano de fundo do seu jogo? Onde se passa?
-           - O jogo se passa em uma casa ao redor de uma cidade abandonada. Os ambientes que o jogador irá observar durante o jogo são os cômodos e o jardim no funda da casa.
+           - Entre os dois países existe uma ilha considerada território neutro, nos últimos anos ela se tornou um campo de batalha entre poderes e tecnologia.
+           - Ao descobrir que seus amigos foram sequestrados, nosso personagem se vê obrigado a ir para essa ilha resgatá-los.
+           - Saímos do momento de narrativa e entramos na gameplay quando chegamos a uma casa abandonada na capital da ilha.
+           - Nesse momento o personagem começa sua missão de explorar a casa para achar seus amigos.
         - O que deve ser contado antes do jogador assumir o controle?
           - O jogador vive em um futuro distópico, aonde poderes existem e a tecnologia aparace como contra-ataque a eles. Os personagens com poderes estão a margem da sociedade e em uma eterna luta por sobrevivência.     
 
