@@ -8,6 +8,9 @@
         - Nosso personagem nasceu em 2367, em um mundo onde alterações genéticas criaram uma nova vertente de humanos, chamados de hereditários.
         - Os hereditários são divididos do resto do mundo ao nascerem, sua genética permite que os médicos os identifiquem mesmo sem a manifestação dos poderes.
         - Nesse cenário futurista, o país se dividiu em duas terras separadas por um oceano, Urbem se tornou o país daqueles com poderes. E é lá que nossa história começa.
+        - Urbs se tornou o país dos humanos.
+        - Logo após a aparição do 1º hereditário, com medo de serem exterminados, os humanos se voltaram ao desenvolvimento intenso do uso da tecnologia como arma.
+        - Isso seria o ínicio de uma guerra sangrenta e inacabável. 
         - O jogo segue uma estética cyberpunk, usando bastante dos conceitos urbanos, neon e futurista.
           
     - Quais as características mais importantes para serem adicionadas no(s) personagem(s)?
