@@ -17,6 +17,11 @@
 
 - Guiando o Jogador:
     - Quais os elementos de orientação direta?
-        - Onde e como eles acontecem
+        - No inicio do jogo dedicamos uma seção à explicação da mecânica das habilidades, os controles </br>
+            que fazem ela funcionar, e qual é a próxima etapa da GamePlay.
     - Quais os elementos de orientação indireta?
-        - Onde e como eles acontecem
+        - O jogador tem como tomar decisões(por exemplo obtendo habilidades) mas elas são limitadas </br>
+        - A trilha sonora leva a narrativa do jogo para frente.
+        - Elementos gráficos nas cenas são usados para chamar atenção e trazer o jogador até ele.
+
+            
