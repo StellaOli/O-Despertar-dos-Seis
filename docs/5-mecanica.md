@@ -26,7 +26,7 @@
         - Habilidades (poderes genéticos que o personagem desenvolve).
         - Itens interativos (chaves, documentos, fragmentos de memória, objetos de puzzle).
         - Indicadores de progresso (barra de energia/poder, número de amigos salvos).
-        - Ambientes desbloqueáveis (cada cômodo da casa representa uma nova fase).
+        - Ambientes desbloqueáveis (cada quadro no labirinto representa uma nova fase).
 
     - Quais os limites do jogo?
         - O jogador está limitado ao espaço físico da casa abandonada e seu labirinto, até que seja concluído.
