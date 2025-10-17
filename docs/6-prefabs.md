@@ -1,10 +1,12 @@
 ### Prefabs
-- Nome
 - Descrição
+    - Nossos prefabs estão focados nas interações do usuário com o cenários e inimigos durante a fase final. Exemplos: paredes, portais, blocos de gelo, inimigos, triggers de eventos, áreas de colisão.
 - Quando são utilizados
+    - Nossos prefabs vão ser utilizados durante as salas de escape room e a fase final
 - Quais seus componentes
-    - Sprites
-    - Colisores
-    - Fontes de audio
-    - Scripts
-        - descreva o comportamento dos scripts
+    - ![WhatsApp Image 2025-10-15 at 09 51 45](https://github.com/user-attachments/assets/83e716ac-50e0-42f8-b1f3-99cd84df1126)
+    - ![WhatsApp Image 2025-10-15 at 09 33 28](https://github.com/user-attachments/assets/435aabd8-9461-4efa-a8ff-e0e66f9d9ff2)
+    - ![WhatsApp Image 2025-10-15 at 09 11 15](https://github.com/user-attachments/assets/7a10cd77-c8cb-4315-932f-e55b493a21d6)
+    - ![WhatsApp Image 2025-10-15 at 09 11 15 (1)](https://github.com/user-attachments/assets/be25ae0d-7352-4526-8877-d59dcae96735)
+    - ![WhatsApp Image 2025-10-15 at 08 46 04](https://github.com/user-attachments/assets/e807df2e-133a-40a7-8d9a-ccd3af649f7b)
+    - ![WhatsApp Image 2025-10-15 at 08 46 04 (1)](https://github.com/user-attachments/assets/36bac84e-e518-4968-bace-43b236760758)
