@@ -5,8 +5,8 @@
         O padrão de interação é Single-Player narrativo interativo, onde o jogador controla diretamente o protagonista e interage com o ambiente através de exploração,         resolução de enigmas e uso de habilidades adquiridas ao longo da jornada. As decisões tomadas impactam o desenrolar da história e o destino final do personagem.
 
     - Qual o objetivo do jogo? </br>
-        O objetivo principal é resgatar os cinco amigos sequestrados e descobrir a verdade por trás do conflito entre humanos e hereditários, ao mesmo tempo em que o             jogador desenvolve novas habilidades e enfrenta dilemas morais que definirão se o personagem se tornará um herói ou um vilão.
-        - Quando o jogador ganha? Quando o jogador perde?
+        O objetivo principal é resgatar os cinco amigos sequestrados, ao mesmo tempo em que o jogador desenvolve novas habilidades e enfrenta dilemas morais que definirão se o personagem se tornará um herói ou um vilão.
+        - Quando o jogador ganha? Quando o jogador perde? </br>
             O jogo não trabalha com o conceito de vitória e derrota e sim com a conclusão da narrativa proposta.
 
     - Quais são as regras do jogo? </br>
