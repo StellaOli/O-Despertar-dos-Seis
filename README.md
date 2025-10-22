@@ -19,5 +19,5 @@ Trabalho de Desenvolvimento de Jogos apresentado ao Centro Universitário [FEI](
 - [Prefabs](./docs/6-prefabs.md)
 - [Prototipação](./docs/7-prototipacao.md)
 - [Testes](./docs/8-testes.md)
-
+- [Apresentação parcial](https://drive.google.com/drive/folders/118FfOthDv95jeX-n07k56_r4dL0JXtVE?usp=sharing)
 
