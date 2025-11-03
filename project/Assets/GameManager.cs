@@ -13,7 +13,8 @@ public class GameManager : MonoBehaviour
     [Header("Nomes das Cenas")]
     public string dialogueSceneName = "DialogueScene";
     public string gameSceneName = "LabirinthScene";
-    public int geniusScene = "GeniusScene";
+    public string electricitySceneName = "ElectricityPuzzleScene"
+    public string geniusSceneName = "GeniusScene";
     public string victorySceneName = "VictoryScene";
     public string gameOverSceneName = "GameOverScene";
 
@@ -23,9 +24,6 @@ public class GameManager : MonoBehaviour
 
     // ... (resto do código permanece igual)
     public int CurrentHealth { get { return currentHealth; } }
-    public int CollectedItems { get { return collectedItems; } }
-    public int RequiredItems { get { return requiredItemsToWin; } }
-    public int CurrentScore { get { return currentScore; } }
 
     void Awake()
     {
@@ -67,8 +65,6 @@ public class GameManager : MonoBehaviour
     void InitializeGame()
     {
         currentHealth = maxHealth;
-        collectedItems = 0;
-        currentScore = 0;
         gameEnded = false;
         Time.timeScale = 1f;
         Debug.Log("?? Jogo inicializado na SampleScene!");
@@ -77,8 +73,6 @@ public class GameManager : MonoBehaviour
     void ResetGameState()
     {
         currentHealth = maxHealth;
-        collectedItems = 0;
-        currentScore = 0;
         gameEnded = false;
         Time.timeScale = 1f;
     }
