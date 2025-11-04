@@ -1,40 +1,38 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
-public class PlayerMovement : MonoBehaviour {
+public class PlayerMovement : MonoBehaviour
+{
+    public float moveSpeed = 5f; // Velocidade de movimento do player
 
-    private Vector2 movement;
-    private Rigidbody2D rb;
-    private Animator animator;
-    [SerializeField] private int speed = 5;
-    void Awake()
+    private Rigidbody2D rb; // Referência ao componente Rigidbody2D
+
+    void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-        animator = GetComponent<Animator>();
-    }
-    
-    private void OnMovement(InputValue value)
-    {
-        movement = value.Get<Vector2>();
-
-        if (movement.x != 0 || movement.y != 0)
-        {
-            animator.SetFloat("X", movement.x);
-            animator.SetFloat("Y", movement.y);
-
-            animator.SetBool("IsWalking", true);
-        } else
-        {
-            animator.SetBool("IsWalking", false);
-        }
-        
+        // Pega a referência do Rigidbody2D no início do jogo
+        rb = GetComponent<Rigidbody2D>(); 
     }
 
-    private void FixedUpdate()
+    void Update()
     {
-        rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
+        // Input do Teclado
+        // Pega os valores do input horizontal (A/D ou Setas Esquerda/Direita)
+        float moveX = Input.GetAxisRaw("Horizontal"); 
+        // Pega os valores do input vertical (W/S ou Setas Cima/Baixo)
+        float moveY = Input.GetAxisRaw("Vertical"); 
+
+        // Cria um vetor de movimento normalizado
+        Vector2 movement = new Vector2(moveX, moveY).normalized; 
+
+        // Aplica a velocidade ao Rigidbody
+        // Usamos FixedUpdate para operações de física
+        // mas o input é lido em Update, então vamos guardar o movimento aqui
+        rb.velocity = movement * moveSpeed;
     }
 
+    // Se preferir uma movimentação baseada em física mais precisa (para colisões e tal), 
+    // é bom usar FixedUpdate. Porém, para jogos simples, Update geralmente funciona.
+    // void FixedUpdate()
+    // {
+    //    // rb.MovePosition(rb.position + movement * moveSpeed * Time.fixedDeltaTime);
+    // }
 }
