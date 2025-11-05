@@ -3,15 +3,24 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Enemy
+  - Power1Door
+  - Power2Door
+  - FinalExit
+  - Power1Unlock
+  - Power2Unlock
+  - ReturnToLab
+  - CheckPoint
+  - Trap
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
-  - 
+  - Wall
   - 
   - 
   - 
