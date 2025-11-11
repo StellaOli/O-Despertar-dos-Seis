@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: 1920e2d3eb20a45478cb62f18d3ecf85
+guid: cb4917773af8ebc468f2056996727e4a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2895157278119961449
-    second: Untitled design_0
-  - first:
-      213: -1284203495265738372
-    second: Untitled design_1
-  - first:
-      213: 2117523554660925621
-    second: Untitled design_2
-  - first:
-      213: 5770007844460199312
-    second: Untitled design_3
+      213: 7141765067525904753
+    second: Untitled design (1)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -33,7 +24,7 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 1
+  isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -109,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Untitled design_0
+      name: Untitled design (1)_0
       rect:
         serializedVersion: 2
-        x: 52
-        y: 566
-        width: 463
-        height: 445
+        x: 71
+        y: 74
+        width: 939
+        height: 933
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -123,71 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 79cd5c47bc552d7d0800000000000000
-      internalID: -2895157278119961449
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Untitled design_1
-      rect:
-        serializedVersion: 2
-        x: 565
-        y: 566
-        width: 463
-        height: 444
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c71ee5d99b79d2ee0800000000000000
-      internalID: -1284203495265738372
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Untitled design_2
-      rect:
-        serializedVersion: 2
-        x: 52
-        y: 69
-        width: 463
-        height: 450
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5b0461f2474f26d10800000000000000
-      internalID: 2117523554660925621
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Untitled design_3
-      rect:
-        serializedVersion: 2
-        x: 565
-        y: 68
-        width: 463
-        height: 451
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 09d7440509f231050800000000000000
-      internalID: 5770007844460199312
+      spriteID: 179dc2f7d75ac1360800000000000000
+      internalID: 7141765067525904753
       vertices: []
       indices: 
       edges: []
@@ -202,11 +130,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      Untitled design_0: -2895157278119961449
-      Untitled design_1: -1284203495265738372
-      Untitled design_2: 2117523554660925621
-      Untitled design_3: 5770007844460199312
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
