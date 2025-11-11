@@ -2335,6 +2335,7 @@ GameObject:
   - component: {fileID: 677502389}
   - component: {fileID: 677502388}
   - component: {fileID: 677502390}
+  - component: {fileID: 677502391}
   m_Layer: 0
   m_Name: laser_Circular (1)
   m_TagString: Trap
@@ -2479,6 +2480,23 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.2, y: 0.27}
   m_EdgeRadius: 0
+--- !u!114 &677502391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 677502386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbe56b95aa202c743a0a30b8ed24c566, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 20
+  damageInterval: 1
+  isContinuousDamage: 0
+  damageColor: {r: 1, g: 0, b: 0, a: 1}
+  trapEffect: {fileID: 0}
 --- !u!1 &715457475
 GameObject:
   m_ObjectHideFlags: 0
