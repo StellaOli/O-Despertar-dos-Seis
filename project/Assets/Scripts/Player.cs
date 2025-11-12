@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.Rendering.Universal;
+using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
-    [Header("Movimentação - Setas")]
-    public float speed = 5.0f; // Velocidade de ANDAR (não correr)
+    [Header("Movimentação - Input System")]
+    public float speed = 5.0f;
 
     [Header("Configurações de Vida")]
     public int maxHealth = 100;
@@ -39,9 +40,13 @@ public class Player : MonoBehaviour
 
     // Componentes privados
     private Rigidbody2D rb2d;
+    private Vector2 movementInput;
     private bool isGrounded;
     private bool isUsingPower = false;
     private string currentPowerAnimation = "";
+
+    // Input System
+    private PlayerInput playerInput;
 
     void Start()
     {
@@ -49,6 +54,7 @@ public class Player : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        playerInput = GetComponent<PlayerInput>();
 
         // Configura iluminação
         SetupLighting();
@@ -57,6 +63,7 @@ public class Player : MonoBehaviour
         currentHealth = maxHealth;
 
         if (rb2d == null) Debug.LogError("Player: Rigidbody2D não encontrado!");
+        if (playerInput == null) Debug.LogError("Player: PlayerInput não encontrado!");
     }
 
     void SetupLighting()
@@ -70,6 +77,26 @@ public class Player : MonoBehaviour
         else
         {
             Debug.LogWarning("💡 Light2D não atribuído ao Player");
+        }
+    }
+
+    // Input System - Movimento
+    private void OnMovement(InputValue value)
+    {
+        if (isUsingPower) return;
+
+        movementInput = value.Get<Vector2>();
+
+        // Atualiza animações de movimento
+        if (movementInput.x != 0 || movementInput.y != 0)
+        {
+            animator.SetFloat("X", movementInput.x);
+            animator.SetFloat("Y", movementInput.y);
+            animator.SetBool("IsWalking", true);
+        }
+        else
+        {
+            animator.SetBool("IsWalking", false);
         }
     }
 
@@ -106,25 +133,14 @@ public class Player : MonoBehaviour
 
     void ProcessMovement()
     {
-        float moveHorizontal = 0f;
-        float moveVertical = 0f;
-
-        // Input horizontal (Setas Esquerda/Direita) - ANDAR
-        if (Input.GetKey(KeyCode.RightArrow)) moveHorizontal = 1f;
-        if (Input.GetKey(KeyCode.LeftArrow)) moveHorizontal = -1f;
-
-        // Input vertical (Setas Cima/Baixo) - ANDAR
-        if (Input.GetKey(KeyCode.UpArrow)) moveVertical = 1f;
-        if (Input.GetKey(KeyCode.DownArrow)) moveVertical = -1f;
-
-        // Movimento em grid (andar) - velocidade constante
-        Vector2 movement = new Vector2(moveHorizontal * speed, moveVertical * speed);
+        // Movimento usando Input System - suave e com física
+        Vector2 movement = movementInput * speed;
         rb2d.velocity = movement;
 
-        // Flip do sprite baseado na direção horizontal
-        if (moveHorizontal != 0f && spriteRenderer != null)
+        // Flip do sprite baseado na direção horizontal (opcional - mantém a lógica original)
+        if (movementInput.x != 0f && spriteRenderer != null)
         {
-            spriteRenderer.flipX = moveHorizontal < 0f;
+            spriteRenderer.flipX = movementInput.x < 0f;
         }
     }
 
@@ -132,10 +148,7 @@ public class Player : MonoBehaviour
     {
         if (animator != null)
         {
-            // Animação de andar (quando se movendo)
-            bool isWalking = rb2d.velocity.magnitude > 0.1f;
-            animator.SetBool("isWalking", isWalking);
-
+            // As animações de movimento já são controladas no OnMovement
             // Animação de poder
             animator.SetBool("isUsingPower", isUsingPower);
 
@@ -165,6 +178,10 @@ public class Player : MonoBehaviour
         canUsePower1 = false;
         currentPowerAnimation = "UsePower1";
 
+        // Para o movimento durante o poder
+        movementInput = Vector2.zero;
+        animator.SetBool("IsWalking", false);
+
         Debug.Log("⚡ Usando Poder 1!");
 
         if (power1Effect != null)
@@ -172,8 +189,6 @@ public class Player : MonoBehaviour
             GameObject effect = Instantiate(power1Effect, transform.position, Quaternion.identity);
             Destroy(effect, 1f);
         }
-
-        //ApplyPowerDamage(transform.position, 2f, power1Damage);
 
         yield return new WaitForSeconds(0.8f);
         isUsingPower = false;
@@ -189,6 +204,10 @@ public class Player : MonoBehaviour
         canUsePower2 = false;
         currentPowerAnimation = "UsePower2";
 
+        // Para o movimento durante o poder
+        movementInput = Vector2.zero;
+        animator.SetBool("IsWalking", false);
+
         Debug.Log("🔥 Usando Poder 2!");
 
         if (power2Effect != null)
@@ -197,30 +216,12 @@ public class Player : MonoBehaviour
             Destroy(effect, 1.5f);
         }
 
-        //ApplyPowerDamage(transform.position, 3f, power2Damage);
-
         yield return new WaitForSeconds(1.2f);
         isUsingPower = false;
 
         yield return new WaitForSeconds(power2Cooldown - 1.2f);
         canUsePower2 = true;
     }
-
-  //void ApplyPowerDamage(Vector2 position, float radius, int damage)
-  //  {
-  //      Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(position, radius);
-  //      foreach (Collider2D enemy in hitEnemies)
-  //      {
-  //          if (enemy.CompareTag("Enemy"))
-  //          {
-  //              Enemy enemyScript = enemy.GetComponent<Enemy>();
-  //              if (enemyScript != null)
-  //              {
-  //                  enemyScript.TakeDamage(damage);
-  //              }
-  //          }
-  //      }
-  //  }
 
     // ❤️ SISTEMA DE VIDA
     public void TakeDamage(int damage)
@@ -294,10 +295,11 @@ public class Player : MonoBehaviour
         currentHealth = maxHealth;
         isInvulnerable = false;
         isUsingPower = false;
+        movementInput = Vector2.zero;
 
         if (animator != null)
         {
-            animator.SetBool("isWalking", false);
+            animator.SetBool("IsWalking", false);
             animator.SetBool("isUsingPower", false);
             animator.ResetTrigger("Die");
         }
