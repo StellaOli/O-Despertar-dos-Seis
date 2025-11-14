@@ -1,6 +1,6 @@
 using UnityEngine;
-using UnityEngine.SceneManagement; // Pra reiniciar a cena (se quiser)
-using System.Collections; // Pra usar Coroutines (o pisca-pisca)
+using UnityEngine.SceneManagement; 
+using System.Collections; 
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -10,12 +10,11 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Vidas e Respawn")]
     public int lives = 3;
-    public float invulnerabilityDuration = 2f; // Tempo total invulnerável após morrer
-    public int blinkCount = 3; // Quantas vezes pisca
-    public float blinkSpeed = 0.2f; // Velocidade do pisca (0.2s apagado, 0.2s aceso)
+    public float invulnerabilityDuration = 2f; 
+    public int blinkCount = 3; 
+    public float blinkSpeed = 0.2f; 
 
-    // Controles internos
-    private Vector3 spawnPoint; // Onde ele nasceu a primeira vez
+    private Vector3 spawnPoint; 
     private SpriteRenderer sr;
     private bool canMove = true;
     private bool isInvulnerable = false;
@@ -25,28 +24,24 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
         
-        // Salva a posição inicial como o ponto de respawn
         spawnPoint = transform.position; 
     }
 
     void Update()
     {
-        // Se não puder se mover (morto/renascendo), trava a velocidade
         if (!canMove)
         {
             rb.velocity = Vector2.zero;
             return;
         }
 
-        // Código de movimento normal
-        float moveX = Input.GetAxisRaw("Horizontal");
-        float moveY = Input.GetAxisRaw("Vertical");
+        float moveX = Input.GetAxisRaw("Horizontal"); 
+        float moveY = Input.GetAxisRaw("Vertical"); 
 
-        Vector2 movement = new Vector2(moveX, moveY).normalized;
+        Vector2 movement = new Vector2(moveX, moveY).normalized; 
         rb.velocity = movement * moveSpeed;
     }
 
-    // Função que detecta os Triggers (Laser, Botões, etc.)
     private void OnTriggerEnter2D(Collider2D other)
     {
         // Se encostou no Laser E NÃO ESTÁ INVULNERÁVEL
@@ -54,11 +49,21 @@ public class PlayerMovement : MonoBehaviour
         {
             HandleDeath();
         }
+
+        // Se encostou no Campo de Força E NÃO ESTÁ INVULNERÁVEL
+        if (other.CompareTag("ForceField") && !isInvulnerable)
+        {
+            HandleDeath(); 
+        }
     }
 
-    // A "porra da lógica da morte" que você pediu!
-    void HandleDeath()
+    // --- AQUI ESTÁ A CORREÇÃO ---
+    // Adiciona "public" para o Trap.cs E O ENEMY.CS poderem chamar
+    public void HandleDeath()
     {
+        // Se já estiver invulnerável (renascendo), não morre de novo
+        if (isInvulnerable) return; 
+
         lives--; // Perde uma vida
         Debug.Log($"TOMOU! Vidas restantes: {lives}");
 
@@ -66,11 +71,7 @@ public class PlayerMovement : MonoBehaviour
         {
             // --- GAME OVER ---
             Debug.LogError("GAME OVER, MAN! ACABOU AS VIDAS!");
-            // Desativa o player de vez
             gameObject.SetActive(false);
-            
-            // Aqui você pode chamar um Menu de Game Over ou reiniciar o jogo todo
-            // Ex: SceneManager.LoadScene("MainMenu");
         }
         else
         {
@@ -79,7 +80,6 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    // A rotina de Renascer (piscar, ficar estático, etc.)
     IEnumerator RespawnRoutine()
     {
         // 1. FICA ESTÁTICO E INVULNERÁVEL
@@ -105,9 +105,8 @@ public class PlayerMovement : MonoBehaviour
         Debug.Log("Liberado pra andar! (Ainda invulnerável por um tempo)");
 
         // 5. ESPERA A INVULNERABILIDADE ACABAR
-        // O tempo total de invulnerabilidade (2s) é maior que o pisca
-        // (que durou 3 * (0.2 + 0.2) = 1.2s)
         float timeToWait = invulnerabilityDuration - (blinkCount * blinkSpeed * 2);
+        if (timeToWait < 0) timeToWait = 0; // Evita tempo negativo
         yield return new WaitForSeconds(timeToWait);
 
         isInvulnerable = false;

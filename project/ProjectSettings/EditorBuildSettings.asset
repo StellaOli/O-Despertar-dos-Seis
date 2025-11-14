@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GeniusScene.unity
     guid: 435e38495e817d34297d27d563e45533
+  - enabled: 1
+    path: Assets/Scenes/ElectricityPuzzleScene.unity
+    guid: 4d766b5685b304a33a395e41febfb0c2
   m_configObjects:
     com.unity.input.settings: {fileID: 11400000, guid: 71cc434f7432ce64fb3c85e00199a8ef, type: 2}
   m_UseUCBPForAssetBundles: 0
