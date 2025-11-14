@@ -21,3 +21,7 @@ Trabalho de Desenvolvimento de Jogos apresentado ao Centro Universitário [FEI](
 - [Testes](./docs/8-testes.md)
 - [Apresentação parcial](https://drive.google.com/drive/folders/118FfOthDv95jeX-n07k56_r4dL0JXtVE?usp=sharing)
 
+
+## Créditos
+- [Assets](https://foozlecc.itch.io/)
+  Alguns foram feitos pelo Gemini, com scripts montados pelo Humberto e alguns outros foram pegos na internet, feitos pelo Foozle (Link acima).
