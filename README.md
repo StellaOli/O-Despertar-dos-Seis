@@ -24,4 +24,5 @@ Trabalho de Desenvolvimento de Jogos apresentado ao Centro Universitário [FEI](
 
 ## Créditos
 - [Assets](https://foozlecc.itch.io/)
+
   Alguns foram feitos pelo Gemini, com scripts montados pelo Humberto e alguns outros foram pegos na internet, feitos pelo Foozle (Link acima).
